@@ -1,0 +1,55 @@
+:root {
+   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+   line-height: 1.5;
+   font-weight: 400;
+
+   color-scheme: light dark;
+   color: rgba(255, 255, 255, 0.87);
+   background-color: #242424;
+
+   font-synthesis: none;
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   -webkit-text-size-adjust: 100%;
+}
+.board-row{
+	clear:both;
+	content: "";
+	display: table;
+}
+.status {
+	margin-bottom: 10px;
+}
+.square {
+	border: 1px solid gray;
+	float: left;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 34px;
+	height: 34px;
+	margin-right: -1px;
+	margin-top: -1px;
+	padding: 0;
+	text-align: center;
+	width: 34px;
+}
+.red {
+	background-color: red;
+}
+.blue {
+	background-color: blue;
+}
+.square:focus {
+	outline: none;
+}
+.kpd-navigation .square:focus{
+	background: #999;
+}
+.game {
+	display: flex;
+	flex-direction: row;
+}
+.game-info{
+	margin-left: 20px;
+}
